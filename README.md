@@ -21,3 +21,13 @@ user.
 To understand the matrix Y, the script ex8 cofi.m will compute
 the average movie rating for the first movie (Toy Story) and output the
 average rating to the screen.
+
+The collaborative filtering algorithm in the setting of movie recommen-
+dations considers a set of n-dimensional parameter vectors x(1); :::; x(nm) and
+theta(1); :::; theta(nu), where the model predicts the rating for movie i by user j as
+y(i;j) = (theta(j))T x(i).
+
+Given a dataset that consists of a set of ratings produced
+by some users on some movies, to learn the parameter vectors
+x(1); :::; x(nm); theta(1); :::; theta(nu) that produce the best fit (minimizes the squared
+error).
