@@ -31,3 +31,10 @@ Given a dataset that consists of a set of ratings produced
 by some users on some movies, to learn the parameter vectors
 x(1); :::; x(nm); theta(1); :::; theta(nu) that produce the best fit (minimizes the squared
 error).
+
+Note that the function returns the gradient for both sets of variables
+by unrolling them into a single vector. After completion of the code
+to compute the gradients, the script ex8 cofi.m will run a gradient check
+(checkCostFunction) to numerically check the implementation the gra-
+dients. If the implementation is correct, it  should have the analytical
+and numerical gradients match up closely.
